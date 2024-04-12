@@ -1,0 +1,102 @@
+.kc-parent-div{
+    color: var(--col-theme-text);
+}
+
+.kc-background-image{
+    top: 0;
+    background: url('../images/background-image.jpg') no-repeat center center / cover;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1000;
+    filter: blur(0.75rem) brightness(var(--var-background-brightness));
+    transform: scale(1.05);
+    position: fixed;
+}
+
+.kc-navbar-items{
+    align-items: center;
+}
+
+.kc-logo{
+    width: 140px;
+}
+
+.drop-shadow{
+    filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.125));
+}
+
+#kc-content{
+    width: 100%;
+    position: relative;
+    top: 56px !important;
+}
+
+.kc-panel{
+    border-radius: 0.25rem;
+    background-color: var(--col-theme-accent);
+    transition: background-color ease var(--var-animation-duration) 0s;
+}
+
+body {
+    font-family: "Nunito Sans", "Noto Sans JP", sans-serif;
+}
+
+.kc-user-icon img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 999px !important;
+    object-fit: cover;
+    object-position: center;
+}
+
+.kc-post-image{
+    border-radius: 15px !important;
+    object-fit: cover;
+    object-position: center;
+}
+
+#kc-post-list,.kc-post-list{
+    will-change: transform;
+    transform: translateZ(0);
+    font-size: 0;
+}
+
+.screen-height {
+    max-height: 715px;
+    overflow: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--col-panel-separator) rgba(0, 0, 0, 0);
+    overflow-x: hidden;
+}
+
+.btn-pill{
+    height: 32px;
+    max-width: 100%;
+    border: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer !important;
+    border-radius: 999px !important;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+    font-weight: 600;
+    white-space: nowrap;
+    padding: 0 2px;
+    color: var(--col-theme-text);
+    text-decoration: none;
+    background-color: var(--col-theme-accent);
+    transition: background-color ease var(--var-animation-duration) 0s;
+}
+
+.no-resize{
+    resize: none;
+}
